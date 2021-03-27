@@ -9,7 +9,7 @@
 const server = require('http').createServer()
 const io = require('socket.io')(server, { cors: { origin: '*' } });
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 // Listen for incoming connections
 server.listen(port, (err) => {
