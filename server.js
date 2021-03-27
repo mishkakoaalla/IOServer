@@ -10,6 +10,7 @@ const server = require('http').createServer()
 const io = require('socket.io')(server, { cors: { origin: '*' } });
 
 const port = process.env.PORT || 3080;
+app.use(express.static('public'));
 
 // Listen for incoming connections
 server.listen(port, (err) => {
