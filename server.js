@@ -5,10 +5,11 @@
     https://github.com/IgnasKavaliauskas/SocketIO-GMS2-Extension
 */
 
+
 const server = require('http').createServer()
 const io = require('socket.io')(server, { cors: { origin: '*' } });
 
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Listen for incoming connections
 server.listen(port, (err) => {
