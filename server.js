@@ -4,9 +4,7 @@
     Gamemaker: Studio 1.x/2 Socket.io extension 
     https://github.com/IgnasKavaliauskas/SocketIO-GMS2-Extension
 */
-var cors = require('cors')
 
-app.use(cors()) // Use this after the variable declaration
 
 const server = require('http').createServer()
 const io = require('socket.io')(server, { cors: { origin: '*' } });
